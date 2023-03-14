@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Two-Sum" />
         <module name="Two Sum" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Two Sum" target="17" />
+      <module name="Two-Sum" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

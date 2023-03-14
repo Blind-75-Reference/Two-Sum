@@ -1,6 +1,8 @@
 # Two-Sum
 [Problem](https://leetcode.com/problems/two-sum/)
 
+Your goal will be to search an array for two complimentary numbers which sum up to a target number.
+
 
 <details>
   <summary>Hint #1</summary>

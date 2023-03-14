@@ -1,20 +1,24 @@
+import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
-        List<Integer> elementList = new LinkedList<Integer>();
+        Map<Integer, Integer> integerMap = new Hashtable<>();
+        //K = element, V = index
 
-        elementList.add(nums[0]);
+        integerMap.put(nums[0], 0);
 
         for(int i = 1; i < nums.length; i++) {
-            for(Integer element : elementList) {
-                if (element + nums[i] == target) {
-                    return new int[]{elementList.indexOf(element), i};
-                }
+            Integer compliment = target - nums[i];
+            Integer complimentIndex = integerMap.get(compliment);
+            if(complimentIndex != null) {
+                //found the compliments that sum to target
+                return new int[]{complimentIndex, i};
             }
-            elementList.add(nums[i]);
+            integerMap.put(nums[i], i);
         }
-        return null;
+        return null;//shouldn't happen
     }
 }

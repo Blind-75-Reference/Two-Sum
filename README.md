@@ -1,5 +1,5 @@
 # Two-Sum
-[https://leetcode.com/problems/two-sum/](Problem)
+[Problem](https://leetcode.com/problems/two-sum/)
 
 
 <details>
